@@ -28,6 +28,39 @@
     transform: translateY(0);
   }
 }
+@keyframes app-head {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+
+@keyframes user-options {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+
+.animate-user-options {
+  animation: user-options 0.7ms ease-out;
+}
+
+.animate-app-head {
+  animation: app-head 0.7ms ease-out;
+}
 
 .animate-todo-head {
   animation: todo-head 0.7s ease-out;

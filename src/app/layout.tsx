@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
   <body className='h-screen w-full bg-black '>
     <header className='bg-grad border-b border-b-bord h-[15%] text-white text-4xl flex justify-evenly fixed z-10 w-full top-0'>
-      <div className='ms-7 w-auto mt-5 font-serif flex gap-3'>
+      <div className='ms-7 w-auto mt-5 font-serif flex gap-3 animate-app-head transition delay-100'>
         <PenIcon/>
         Todos
 
@@ -27,8 +27,8 @@ export default function RootLayout({
       <div className='w-4/12'>
 
       </div>
-      <div className='me-7 w-auto flex gap-3 h-full items-center'>
-        <AddIcon/>
+      <div className='me-7 w-auto flex gap-3 h-full items-center animate-user-options'>
+        {/* <AddIcon/> */}
         <SearchIcon/>
         <UserIcon/>
 
